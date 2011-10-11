@@ -1,0 +1,8 @@
+^EGG-INFO/
+^build/
+^dist/
+\.egg-info
+\.coverage
+\.pyc
+\.swp
+
