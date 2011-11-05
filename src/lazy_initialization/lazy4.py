@@ -1,6 +1,20 @@
 class B(object):
     pass
 
+class Lazy(object):
+    def __init__(self,obj):
+        print '--initialisation--'
+        self.obj = self.obj 
+    
+    def get_inst(self):
+        return self.obj 
+    @property
+    def b(self):
+        if not self._b:
+            self._b = B()
+        return self._b
+
+
 class A(object):
     def __init__(self):
         print '--initialisation--'
