@@ -1,5 +1,5 @@
 
-def is_positive(func):
+def is_paired(func):
     def gen(a,b):
         #search metod to get params
         for item in [a,b]:
@@ -12,7 +12,7 @@ def is_positive(func):
     
 
 #positiveSum = is_positive(positiveSum)
-@is_positive
+@is_paired
 def positiveSum(a,b):
     return a+b
 
