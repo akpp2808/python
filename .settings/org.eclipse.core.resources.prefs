@@ -1,7 +1,7 @@
-#Wed Apr 18 18:28:51 EEST 2012
 eclipse.preferences.version=1
 encoding//src/lazy_initialization/lazy.py=utf-8
 encoding//src/redis/pubsub/listener.py=utf-8
+encoding//src/sort/sort_by_2_keys.py=utf-8
 encoding//src/str/ascii.py=utf-8
 encoding//src/str/is_ascii.py=utf-8
 encoding//src/utf-8/decode.py=utf-8
