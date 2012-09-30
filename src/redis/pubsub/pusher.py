@@ -5,7 +5,7 @@ Created on Dec 9, 2011
 '''
 import redis, json, time
 REDIS_HOST = 'localhost'
-RDB = '1'
+RDB = '80'
 rc = redis.Redis(host=REDIS_HOST, port=6379, db=RDB)
 
 channel = 'ASD'
@@ -23,7 +23,8 @@ data = {'action': 'chats:update','data':{
     'id': user_id
 }}
 
-        
-channel = 'admin:chats_list:2'
+
+channel = '80:admin:chats_list:2'
+
 #print rc.publish(channel,json.dumps(data)) 
 print rc.publish(channel,'a') 
