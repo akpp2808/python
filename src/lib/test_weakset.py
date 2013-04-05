@@ -6,7 +6,7 @@ link: http://docs.python.org/2/library/weakref.html
 
 
 import unittest
-from weakref import WeakSet
+from weakref import WeakSet, WeakValueDictionary
 
 
 class Object:
@@ -26,6 +26,8 @@ class TestWeakSet(unittest.TestCase):
         del obj
         self.assertEqual(len(ws), 1)
         self.assertIn(obj2, ws)
+
+
 
 if __name__ == '__main__':
     unittest.main()
