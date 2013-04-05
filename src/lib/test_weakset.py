@@ -17,11 +17,12 @@ class TestWeakSet(unittest.TestCase):
     def test_len(self):
         obj = Object()
         obj2 = Object()
-        ws = WeakSet()
-        ws.add(obj)
+        ws = WeakSet([obj])
+        self.assertIn(obj, ws)
         self.assertEqual(len(ws), 1)
         ws.add(obj2)
         self.assertEqual(len(ws), 2)
+        self.assertIn(obj2, ws)
         del obj
         self.assertEqual(len(ws), 1)
         self.assertIn(obj2, ws)
