@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
 encoding//src/lazy_initialization/lazy.py=utf-8
+encoding//src/lib/test_weakset.py=utf-8
 encoding//src/redis/pubsub/listener.py=utf-8
 encoding//src/sort/sort_by_2_keys.py=utf-8
 encoding//src/str/ascii.py=utf-8

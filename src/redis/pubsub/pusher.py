@@ -24,7 +24,7 @@ data = {'action': 'chats:update','data':{
 }}
 
 
-channel = '80:admin:chats_list:2'
+channel = '80:subscribe_to_online_users_list'
 
 #print rc.publish(channel,json.dumps(data)) 
 print rc.publish(channel,'a') 

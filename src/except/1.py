@@ -1,6 +1,9 @@
-    a + b
-#try:
-#except Exception as e:
+a = 1
+try:
+    a
+except Exception as e:
 #    print '==============='
-#    print e
+    print 'error'
 #    print '==============='
+else:
+    print 23
