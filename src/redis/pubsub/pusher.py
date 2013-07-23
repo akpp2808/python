@@ -8,7 +8,7 @@ REDIS_HOST = 'localhost'
 RDB = '80'
 rc = redis.Redis(host=REDIS_HOST, port=6379, db=RDB)
 
-channel = 'ASD'
+channel = 'bla-bla'
 #data = {'action':'a1'}
 message = time.strftime('%s')
 data = {u'action': 'chats:addmessage', u'data': {u'id': u'029b897521cb3c885be0284ef22849ac', u'attr': {u'name': u'Guest_14', u'userid': 14, u'time': u'1323423809', u'message': message, u'unread': 1, u'id': 1250,u'type':'msg'}}}
@@ -24,7 +24,10 @@ data = {'action': 'chats:update','data':{
 }}
 
 
-channel = '80:subscribe_to_online_users_list'
+#channel = '80:subscribe_to_online_users_list'
 
-#print rc.publish(channel,json.dumps(data)) 
-print rc.publish(channel,'a') 
+#print rc.publish(channel,json.dumps(data))
+#rc.publish(channel, 'a')
+data = {"a": 2}
+rc.publish(channel, {"a": 2})
+

@@ -13,3 +13,9 @@ action = 'aaddAdmins'
 if re.search('^add|^set', action):
     print action
 #print r.group(0) if r else ''
+
+
+text = '123_ddd'
+subtext = '123'
+
+print re.compile(subtext).search(text)

@@ -10,5 +10,9 @@ b = 'B'
 #import __init__
 
 #print __init__.init
-import package
-print package.init
+#import package
+#print package.init
+
+
+from a import a
+print a
