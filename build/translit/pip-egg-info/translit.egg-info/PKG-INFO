@@ -1,0 +1,56 @@
+Metadata-Version: 1.1
+Name: translit
+Version: 0.2a1
+Summary: Transliterate between Unicode and smaller coded character sets
+Home-page: https://bitbucket.org/spirit/translit
+Author: spirit
+Author-email: hiddenspirit@gmail.com
+License: UNKNOWN
+Download-URL: https://bitbucket.org/spirit/translit/downloads
+Description: translit – Transliterate between Unicode and smaller coded character sets
+        =========================================================================
+        
+        
+        Example usage
+        -------------
+        
+        >>> import translit
+        >>> text = "La question, c’est\u202f: «\u202fOù est le cœur\u202f?\u202f»"
+        
+        Downgrade text to Latin-1:
+        
+        >>> translit.downgrade(text, "latin-1")
+        "La question, c'est\xa0: «\xa0Où est le coeur\xa0?\xa0»"
+        
+        Downgrade text to ASCII:
+        
+        >>> translit.downgrade(text, "ascii")
+        'La question, c\'est : "Ou est le coeur ?"'
+        
+        Downgrade and encode to Latin-1:
+        
+        >>> buf = text.encode("latin-1/translit")
+        >>> buf
+        b"La question, c'est\xa0: \xab\xa0O\xf9 est le coeur\xa0?\xa0\xbb"
+        
+        Decoding, the normal way:
+        
+        >>> buf.decode("latin-1")
+        "La question, c'est\xa0: \xab\xa0O\xf9 est le coeur\xa0?\xa0\xbb"
+        
+        Decoding, the upgraded way:
+        
+        >>> buf.decode("latin-1/translit")
+        'La question, c’est\u202f: «\u202fOù est le cœur\u202f?\u202f»'
+        
+        
+        Requirements
+        ------------
+        
+        - `PyEnchant <http://packages.python.org/pyenchant/>`_
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2

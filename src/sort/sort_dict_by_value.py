@@ -17,7 +17,7 @@ d = {'time': 5, 'name': 'd'}
 dicts_list = [b, c, d, a]
 #first.sort(cmp=compare, key=None, reverse=False)
 #dicts_list.sort(key=lambda a: a.get('time'))
-dicts_list.sort(key=lambda a: a.get('time'))
+# dicts_list.sort(key=lambda a: a.get('time'))
 
 print dicts_list
 
