@@ -41,7 +41,7 @@ Base = declarative_base()
 metadata = Base.metadata
 META = MetaData()  # ???
 
-#?charset=utf
+
 class Temp(Base):
     """
     Class for temporary table
@@ -52,7 +52,7 @@ class Temp(Base):
 
     id = Column(Integer, primary_key=True)
     name = Column(String(256))
-    
+
     def test(self):
         print 'self', dir(self)
 

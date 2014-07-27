@@ -10,10 +10,13 @@ str = 'Hi ss4@gmail.com!'
 #=============================================================
 html = 'Guest_16'
 print html
-print re.search('Guest_(\d+)',html).group(1)
+# print re.search('Guest_(\d+)',html).group(1)
+p = re.compile('Guest_(\d+)')
+print p.search(html).group()
 
 
 
-text = '(1)Michael'
 
-print re.search('\((\d*)\)', text).group(1)
+# text = '(1)Michael'
+
+# print re.search('\((\d*)\)', text).group(1)

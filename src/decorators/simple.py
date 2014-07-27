@@ -5,10 +5,10 @@ def increase(func):
     return gen
 
 
-#positiveSum = is_positive(positiveSum)
-@increase
+# @increase
 def Sum(a, b):
     print 'a', a, 'b', b
     return a + b
 
+Sum = increase(Sum)
 print Sum(2,4)

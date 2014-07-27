@@ -28,7 +28,7 @@ dbdescr = '%(dbms)s://%(dbuser)s:%(dbuserpasswd)s@%(host)s/%(dbname)s' % locals(
 print dbdescr
 engine = create_engine(dbdescr,
                            echo=False,  # show debug info in console
-                           pool_recycle=7200  # control the maximum age of connection
+#                            pool_recycle=7200  # control the maximum age of connection
                            )
 #engine.execute('CREATE DATABASE IF NOT EXISTS %s' % dbname)
 Session = sessionmaker(bind=engine)  # Session.configure(bind=engine)

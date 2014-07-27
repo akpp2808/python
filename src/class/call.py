@@ -8,7 +8,7 @@ class A():
     def __getattribute__(self,name):
         print name
 
-print dir(A)
+print dir(A) 
 
 
 a = A()
