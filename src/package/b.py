@@ -13,7 +13,8 @@ b = 'B'
 #import package
 #print package.init
 
-import a
+# import a
+from package import a
 
 
 a.a1 = a.a1 + [3, 4]

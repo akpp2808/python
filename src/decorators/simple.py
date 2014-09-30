@@ -41,3 +41,4 @@ def hello():
     return "hello habr"
 
 print hello() ## выведет <b><i>hello habr</i></b>
+
