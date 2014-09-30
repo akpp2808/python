@@ -9,7 +9,7 @@ def is_paired(func):
         return func(a,b)
     print func
     return gen
-    
+
 
 #positiveSum = is_positive(positiveSum)
 @is_paired(1,2)
