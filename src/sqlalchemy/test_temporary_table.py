@@ -1,9 +1,12 @@
 import sqlalchemy
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.types import Integer, String
-from sqlalchemy.schema import Column, MetaData
+from sqlalchemy.schema import Column
 from sqlalchemy.engine import create_engine
 from sqlalchemy.orm.session import sessionmaker
+
+import umysqldb
+umysqldb.install_as_MySQLdb()
 
 
 #engine = create_engine('sqlite:///:memory:', echo=True)
@@ -30,7 +33,6 @@ session = Session()
 
 Base = declarative_base()
 metadata = Base.metadata
-META = MetaData()  # ???
 
 #?charset=utf
 class Temp(Base):
