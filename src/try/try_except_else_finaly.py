@@ -2,8 +2,8 @@ import socket
 import errno
 def a():    
     try:
-        raise socket.error(32, 'bal')
-#         print 123
+#         raise socket.error(32, 'bal')
+        print 123
         
 #         return
         
@@ -19,6 +19,7 @@ def a():
             return
         print "Exception presend", e
     else:
+        
         print "not exception"
     finally:
 #         print 'a', a
