@@ -66,9 +66,9 @@ class Transaction(Base):
         return '<Transaction(id: {0.id},'\
             'money: {0.money}, balance: {0.balance})>'.format(self)
 
-metadata = Base.metadata
-metadata.drop_all(engine)
-metadata.create_all(engine)
+# metadata = Base.metadata
+# metadata.drop_all(engine)
+# metadata.create_all(engine)
 
 
 #Создание сессии

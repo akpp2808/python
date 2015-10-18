@@ -3,11 +3,11 @@ import errno
 def a():    
     try:
 #         raise socket.error(32, 'bal')
-        print 123
+#         print 123
         
 #         return
         
-#         a = 1 /0
+        a = 1 /0
         
         
     #    result = 1 / 1
@@ -19,7 +19,6 @@ def a():
             return
         print "Exception presend", e
     else:
-        
         print "not exception"
     finally:
 #         print 'a', a

@@ -19,8 +19,8 @@ from sqlalchemy import alias
 def add(money):
     tr = Transaction(money=money)
     print 'tr.created_at0', tr.created_at
-    sa_session.add(tr)
-    print 'tr.created_at1', tr.created_at
+#     sa_session.add(tr)
+#     print 'tr.created_at1', tr.created_at
     sa_session.commit()
     print 'tr.created_at2', tr.id, tr.created_at
 #     tr.created_at = datetime(2014, 10, 20, 6, 39, 24, 12345)
